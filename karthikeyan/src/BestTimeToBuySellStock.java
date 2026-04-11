@@ -5,6 +5,7 @@
         public static int maxProfit(int[] prices) {
             if (prices == null || prices.length < 2) return 0;
             int minPrice = Integer.MAX_VALUE;
+            System.out.println(minPrice);
             int maxProfit = 0;
             for (int p : prices) {
                 if (p < minPrice) minPrice = p;
